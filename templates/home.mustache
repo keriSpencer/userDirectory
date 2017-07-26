@@ -13,15 +13,15 @@
 
           <img src="{{ avatar }}" alt="user photo">
           <a href="/info/{{id}} ">{{ name }}</a>
-          <p>
+
 
           {{#job}}
           {{ job }},
           {{/job}}
           {{^job}}
-            <span>Available for hire</span>
+            <span id="available">Available for hire</span>
           {{/job}}
-          {{ company }}</p>
+          {{ company }}
         </div>
 
       {{ /users }}
